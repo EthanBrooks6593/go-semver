@@ -3,8 +3,8 @@
 ```
 semver.go
 ```
-Check the Go test suite next to the implementation if you want to see how it handles malformed edge cases.
+When routing SMS payloads or managing OTP API versions, you need to compare semver strings without pulling in a massive dependency tree. Check the Go test files next to the implementation to see how it handles edge cases.
 
-You need to parse and compare semantic versions without dragging in extra modules.
+This parses and compares semantic versions with zero external dependencies.
 
-It uses only the Go standard library. You do not need to provision external services or manage third-party dependencies just to validate a version string.
+The Go implementation relies entirely on the standard library. You do not need to install any extra services or third-party packages to get it running.
